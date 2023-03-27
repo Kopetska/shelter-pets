@@ -1,0 +1,800 @@
+:root {
+    --primary-color: #F1CDB3;
+    --primary-hover-color: #FDDCC4;
+   --text-about-color: #4C4C4C;
+   --link-color: #CDCDCD;
+   --link-hover-color: #FAFAFA;
+   --button-text-color: #292929;
+   --title-color: #545454;
+   --background-color: #F6F6F6;
+   --start-screen-background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+   --footer-gradient: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    border-style: none;
+}
+
+
+
+.container {
+    position: relative;
+  
+margin: 0 auto;
+
+    width: 1280px;
+}
+
+.section-title {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: var(--title-color);
+
+}  
+
+
+.header {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+width: 1200px;
+
+ background-color: transparent;
+ }
+
+ .header-pets {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 40px;
+ }
+
+.logo-title {
+    font-family: 'Georgia', serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+
+        color: var(--primary-color);
+
+        margin-bottom: 10px;
+
+     transition: color 250ms linear; 
+}
+
+.logo-pets-title {
+    font-family: 'Georgia', serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    
+        color: var(--title-color);
+    
+        margin-bottom: 10px;
+    
+        transition: color 250ms linear;
+}
+
+.logo a:hover .logo-title {
+color: var(--primary-hover-color);
+}
+
+.logo-pets a:hover .logo-pets-title {
+    color: var(--primary-color);
+}
+
+.logo-subtitle {
+font-family: 'Arial', sans-serif;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+.logo-pets-subtitle {
+font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+
+    color: var(--button-text-color);
+
+    transition: color 250ms linear;
+}
+
+.logo-pets a:hover .logo-pets-subtitle {
+    color: var(--primary-color);
+}
+
+.navigation {
+    display: flex;
+    
+}
+
+.navigation-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.navigation-pets-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.navigation-item a {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+
+    color: var(--link-color);
+
+    transition: color 250ms linear;
+}
+
+.navigation-pets-item a {
+    font-family: 'Arial', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+    
+        color: var(--title-color);
+    
+        transition: color 250ms linear;
+}
+
+.navigation-item:not(:first-child) a:hover {
+    color: var(--link-hover-color);
+}
+
+.navigation-pets-item:not(:nth-child(2)) a:hover{
+    color: var(--button-text-color);
+}
+
+.navigation-item:first-child {
+border-bottom: 3px solid var(--primary-color);
+
+    color: var(--link-hover-color);
+}
+ 
+.navigation-pets-item:nth-child(2) {
+border-bottom: 3px solid var(--primary-color);
+
+color: var(--button-text-color);
+}
+
+
+.start-screen {
+padding-top: 343px;
+width: 1280px;
+ height: 908px;
+
+padding-right: 40px;
+    padding-left: 40px;
+
+    background-image: url('../images/start-screen-puppy.png'),
+    radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    background-repeat: no-repeat;
+    background-size: 698px 728px, cover;
+    background-position: right 40px bottom 0, center;
+
+}
+
+.start-screen-content h2 {
+width: 310px;
+
+font-family: 'Georgia', serif;
+font-weight: 400;
+font-size: 44px;
+line-height: 130%;
+color: #FFFFFF;
+
+margin-bottom: 42px;
+}
+
+.start-screen-content p {
+    width: 460px;
+
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+
+    color: var(--link-color);
+
+    margin-bottom: 42px;
+}
+
+.start-screen-content button {
+display: flex;
+justify-content: center;
+align-items: center;
+
+    width: 207px;
+    height: 52px;
+border-radius: 100px;
+
+font-family: 'Georgia', serif;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+
+color: var(--button-text-color);
+background-color: var(--primary-color);
+
+transition: background-color 250ms linear;
+}
+
+.start-screen-content button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 80px; 
+    padding-right: 40px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+}
+
+.about div {
+    width: 430px;
+    margin-left: 120px;
+}
+
+.about-title {
+    margin-bottom: 25px;
+}
+
+.about-first-paragraph,
+.about-second-paragraph {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+
+    color: var(--text-about-color);
+}
+
+.about-first-paragraph {
+    margin-bottom: 25px;
+}
+
+
+.pets {
+    padding-top: 80px;
+        padding-right: 40px;
+        padding-bottom: 100px;
+        padding-left: 40px;
+
+        background-color: var(--background-color);
+}
+
+.pets-title {
+   text-align: center;
+    margin-bottom: 60px;
+}
+
+.pets-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pets-list {
+    display: flex;
+
+    margin-bottom: 60px;
+}
+
+.pets-item {
+    position: relative;
+    width: 270px;
+    height: 435px;
+    border-radius: 9px;
+
+    background-color: var(--link-hover-color);
+}
+
+.pets-item:not(:last-child) {
+    margin-right: 90px;
+}
+
+.pets-link {
+    width: 100%;
+    height: 100%;
+}
+
+.pets-link p {
+    margin-top: 30px;
+
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    color: var(--title-color);
+}
+
+.button-learn {
+position: absolute;
+left: 50%;
+bottom: 30px;
+transform: translate(-50%, 0);
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 187px;
+height: 52px;
+border: 2px solid var(--primary-color);
+border-radius: 100px;
+
+font-family: 'Georgia', serif;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+
+color: var(--button-text-color);
+background-color: transparent;
+
+transition: background-color 250ms linear, border-color 250ms linear;
+}
+
+ .button-learn:hover,
+ .pets-item:hover .button-learn {
+    border-color: transparent;
+    background-color: var(--primary-hover-color);
+}
+
+.pets-slider-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+
+background-color: transparent;
+
+transition: background-color 250ms linear, border-color 250ms linear;
+}
+
+.pets-slider-button:hover {
+    background-color: var(--primary-hover-color);
+    border-color: transparent;
+}
+
+.pets-slider-icon {
+   width: 14px; 
+   height: 6px;
+}
+
+.button-get-to-know {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 261px;
+    height: 52px;
+    border-radius: 100px;
+    margin: 0 auto;
+
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: var(--button-text-color);
+    background-color: var(--primary-color);
+
+    transition: background-color 250ms linear;
+}
+
+.button-get-to-know:hover {
+    background-color: var(--primary-hover-color);
+}
+
+
+.help {
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+}
+
+.help-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.help-list-1,
+.help-list-2 {
+  display: flex; 
+ justify-content: center;
+}
+
+.help-list-1 {
+    margin-bottom: 55px;
+}
+
+.help-item-1:not(:last-child),
+.help-item-2:not(:last-child) {
+    margin-right: 120px;
+}
+
+.help-item-1,
+.help-item-2 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.help-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.help-subtitle {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    color: var(--title-color);
+
+}
+
+.donation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    background-color: var(--background-color);
+}
+
+.donation-content {
+    width: 380px;
+    margin-left: 30px;
+}
+
+.donation-title {
+    margin-bottom: 20px;
+}
+
+.donation-subtitle {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 20px;
+
+    color: var(--title-color);
+}
+
+.donation-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 349px;
+    height: 43px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+
+    background-color: var(--primary-color);
+
+    transition: background-color 250ms linear;
+}
+
+.donation-link:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.donation-icon {
+    width: 30px;
+    height: 23px;
+    margin-right: 15px;
+}
+
+.donation-link p {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: var(--title-color);
+}
+
+.donation-legal-info {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #B2B2B2;
+}
+
+.footer {
+    display: flex;
+
+    padding-top: 56px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+
+background-image: url('../images/footer-puppy.png'),
+radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+background-repeat: no-repeat;
+background-size: 300px 310px, 100%;
+background-position: bottom 0 right 40px, center;
+}
+
+.footer-title {
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.footer-contacts {
+    margin-right: 160px;
+}
+
+.footer-contacts-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.footer-locations-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.footer-contacts-icon {
+    width: 40px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.footer-locations-icon {
+    width: 22px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link:hover p {
+    color: var(--primary-hover-color);
+}
+
+.footer-link p {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-color);
+
+    transition: color 250ms linear;
+}
+
+.pets-friends {
+padding-top: 80px;
+padding-right: 40px;
+padding-bottom: 100px;
+padding-left: 40px;
+
+
+    background-color: var(--background-color);
+}
+
+.friends-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+
+
+.pets-list-2 {
+    display: flex;
+   justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 40px;
+
+    margin-bottom: 45px;
+}
+
+.pets-item-2 {
+    position: relative;
+    width: 270px;
+    height: 435px;
+    border-radius: 9px;
+
+    background-color: var(--link-hover-color);
+}
+
+.pets-link-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.pets-link-2 p {
+    margin-top: 30px;
+
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    color: var(--title-color);
+}
+
+.button-learn-2 {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 187px;
+    height: 52px;
+    border: 2px solid var(--primary-color);
+    border-radius: 100px;
+
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: var(--button-text-color);
+    background-color: transparent;
+
+    transition: background-color 250ms linear, border-color 250ms linear;
+}
+
+.button-learn-2:hover,
+.pets-item-2:hover .button-learn-2 {
+    border-color: transparent;
+    background-color: var(--primary-hover-color);
+}
+
+.pets-nav-block {
+    display: flex;
+justify-content: center;
+column-gap: 20px;
+}
+
+.button-nav-1 {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid var(--link-color);
+
+    font-family: 'Georgia', serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+
+        color: var(--link-color);
+    background-color: transparent;
+}
+
+.button-nav-2 {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: var(--button-text-color);
+    background-color: transparent;
+
+    transition: background-color 250ms linear, border-color 250ms linear;
+}
+
+.button-nav-2:hover {
+    background-color: var(--primary-hover-color);
+    border-color: transparent;
+}
+
+.nav-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        border: 2px solid var(--primary-color);
+    
+        font-family: 'Georgia', serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    
+        color: var(--button-text-color);
+        background-color: var(--primary-color);
+}
