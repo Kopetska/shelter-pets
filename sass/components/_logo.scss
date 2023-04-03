@@ -1,0 +1,47 @@
+.logo-title {
+    @extend %logo-title-common;
+    @include font('Georgia', 400, 32px, 110%, 0.06em);
+
+    color: $primary-color;
+
+    .logo a:hover & {
+            color: $primary-hover-color;
+        }
+}
+
+.logo-pets-title {
+    @extend %logo-title-common;
+    @include font('Georgia', 400, 32px, 110%, 0.06em);
+
+    color: $title-color;
+
+    .logo-pets a:hover & {
+            color: $primary-color;
+        }
+}
+
+
+.logo-subtitle {
+    @include font('Arial', 400, 13px, 15px, 0.1em);
+
+    color: #FFFFFF;
+
+    transition: color 250ms linear;
+
+    .logo a:hover & {
+            color: $primary-hover-color;
+        }
+}
+
+.logo-pets-subtitle {
+    @include font('Arial', 400, 13px, 15px, 0.1em);
+
+    color: $button-text-color;
+
+    transition: color 250ms linear;
+
+    .logo-pets a:hover & {
+            color: $primary-color;
+        }
+}
+

@@ -1,0 +1,34 @@
+.button-make {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 207px;
+    height: 52px;
+    border-radius: 100px;
+
+    margin-right: auto;
+    margin-bottom: 6.56rem;
+    margin-left: auto;
+
+    @include font('Georgia', 400, 17px, 130%, 00.06em);
+
+    color: $button-text-color;
+    background-color: $primary-color;
+
+    transition: background-color 250ms linear;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 6.25rem;
+    }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+
+    &:hover {
+            background-color: $primary-hover-color;
+        }
+}
+

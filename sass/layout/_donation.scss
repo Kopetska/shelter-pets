@@ -1,0 +1,127 @@
+.donation-background {
+background-color: $background-color;
+}
+
+.donation {
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+
+padding: 2.62rem 0.62rem;
+
+@media screen and (min-width: 768px) {
+    padding: 5rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+}
+   
+}
+
+.donation-content {
+   margin-bottom: 2.62rem;
+
+   @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-right: 194px;
+    padding-left: 194px;
+    margin-bottom: 3.75rem;
+   }
+
+   @media screen and (min-width: 1280px) {
+       margin-bottom: 0;
+   }
+}
+
+.donation-title {
+    @include font('Georgia', 400, 1.56rem, 130%, 0.06em);
+        text-align: center;
+    
+        color: $title-color;
+    
+        margin-bottom: 1.25rem;
+    
+        @media screen and (min-width: 768px) {
+            @include font('Georgia', 400, 2.18rem, 130%, 0.06em);
+            text-align: left;
+        }
+}
+
+.donation-subtitle {
+    @include font('Georgia', 400, 0.93rem, 160%, 0.06em);
+text-align: center;
+
+    margin-bottom: 1.25rem;
+
+    color: $title-color;
+
+    @media screen and (min-width: 768px) {
+        @include font('Georgia', 400, 0.93rem, 110%, 0.06em);
+        text-align: left;
+    }
+}
+
+.donation-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 281px;
+    height: 43px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: $primary-color;
+
+    transition: background-color 250ms linear;
+
+   &:hover {
+            background-color: $primary-hover-color;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 349px;
+            margin-left: 0;
+        }
+}
+
+
+.donation-icon {
+    width: 30px;
+    height: 23px;
+    margin-right: 15px;
+}
+
+.donation-link p {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+
+    color: $title-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 115%;
+    }
+}
+
+.donation-legal-info {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+
+    color: #B2B2B2;
+
+    @media screen and (min-width: 1280px) {
+        width: 380px;
+    }
+}

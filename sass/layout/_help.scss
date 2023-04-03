@@ -1,0 +1,96 @@
+.help {
+    padding: 2.62rem 0.93rem;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 5rem;
+        padding-right: 4.31rem;
+        padding-bottom: 6.25rem;
+        padding-right: 4.31rem;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 5rem;
+            padding-right: 7.5rem;
+            padding-bottom: 6.25rem;
+            padding-right: 7.5rem;
+    }
+}
+
+.help-title {
+    @include font('Georgia', 400, 1.56rem, 130%, 0.06em);
+        text-align: center;
+
+        color: $title-color;
+
+        margin-bottom: 2.62rem;
+
+        @media screen and (min-width: 768px) {
+                @include font('Georgia', 400, 2.18rem, 130%, 0.06em);
+                margin-bottom: 3.75rem;
+            }
+}
+
+.help-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+    gap: 30px;
+   
+   
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+       
+        column-gap: 60px;
+        row-gap: 55px;
+    }
+
+        @media screen and (min-width: 1280px) {
+            justify-content: center;
+    
+            column-gap: 120px;
+           
+        }
+}
+
+.help-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+width: 130px;
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 170px;
+}
+
+
+}
+
+
+.help-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+    width: 60px;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+}
+
+.help-subtitle {
+    @include font('Georgia', 400, 0.93rem, 110%, 0.06em);
+
+    text-align: center;
+
+    color: $title-color;
+
+    @media screen and (min-width: 768px) {
+    @include font('Georgia', 400, 1.25rem, 115%, 0.06em);
+    }
+
+}

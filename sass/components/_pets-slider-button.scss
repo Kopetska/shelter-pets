@@ -1,0 +1,49 @@
+.pets-slider-button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+
+    background-color: transparent;
+
+    transition: background-color 250ms linear, border-color 250ms linear;
+
+    &:hover {
+            background-color: $primary-hover-color;
+            border-color: transparent;
+        }
+}
+
+.pets-slider-button-left {
+position: absolute;
+bottom: -17%;
+left: 20%;
+
+@media screen and (min-width: 768px) {
+    bottom: 50%;
+    left: 0;
+}
+
+}
+
+.pets-slider-button-right {
+ position: absolute;
+bottom: -17%;
+ right: 20%;
+
+@media screen and (min-width: 768px) {
+        bottom: 50%;
+        right: 0;
+    }
+}
+
+
+.pets-slider-icon {
+    width: 14px;
+    height: 6px;
+}

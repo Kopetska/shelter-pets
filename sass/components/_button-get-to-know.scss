@@ -1,0 +1,22 @@
+.button-get-to-know {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 261px;
+    height: 52px;
+    border-radius: 100px;
+    margin: 0 auto;
+
+    @include font('Georgia', 400, 17px, 130%, 0.06em);
+
+    color: $button-text-color;
+    background-color: $primary-color;
+
+    transition: background-color 250ms linear;
+
+    &:hover {
+            background-color: $primary-hover-color;
+        }
+}
+

@@ -1,0 +1,45 @@
+.navigation {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.navigation-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.navigation-pets-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.navigation-item a {
+    @extend %navigation-item;
+    color: $link-color;
+}
+
+.navigation-pets-item a {
+    @extend %navigation-item;
+    color: $title-color;
+}
+
+.navigation-item:not(:first-child) a:hover {
+    color: $link-hover-color;
+}
+
+.navigation-pets-item:not(:nth-child(2)) a:hover {
+    color: $button-text-color;
+}
+
+.navigation-item:first-child {
+    border-bottom: 3px solid $primary-color;
+
+    color: $link-hover-color;
+}
+
+.navigation-pets-item:nth-child(2) {
+    border-bottom: 3px solid $primary-color;
+
+    color: $button-text-color;
+}

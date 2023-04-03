@@ -1,0 +1,24 @@
+%logo-title-common {
+    margin-bottom: 10px;
+    transition: color 250ms linear;
+}
+
+%navigation-item {
+    font-family: 'Arial', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+
+        transition: color 250ms linear;
+}
+
+%section-title {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: $title-color;
+
+}

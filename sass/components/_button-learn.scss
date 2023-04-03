@@ -1,0 +1,29 @@
+.button-learn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 187px;
+    height: 52px;
+    border: 2px solid $primary-color;
+    border-radius: 100px;
+
+    @include font('Georgia', 400, 17px, 130%, 0.06em);
+
+    color: $button-text-color;
+    background-color: transparent;
+
+    transition: background-color 250ms linear, border-color 250ms linear;
+
+    &:hover,
+        .pets-item:hover & {
+            border-color: transparent;
+            background-color: $primary-hover-color;
+        }
+}
+

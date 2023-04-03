@@ -1,0 +1,23 @@
+@import './sass/utils/variables';
+@import './sass/utils/placeholder';
+@import './sass/utils/mixin';
+
+@import './sass/common/base';
+
+@import './sass/components/container';
+@import './sass/components/logo';
+@import './sass/components/navigation';
+@import './sass/components/button-burger';
+@import './sass/components/button-make';
+@import './sass/components/pets-slider-button';
+@import './sass/components/button-learn';
+@import './sass/components/button-get-to-know';
+
+@import './sass/layout/header-start-wrapper';
+@import './sass/layout/header';
+@import './sass/layout/start-screen';
+@import './sass/layout/about';
+@import './sass/layout/pets';
+@import './sass/layout/help';
+@import './sass/layout/donation';
+@import './sass/layout/footer';

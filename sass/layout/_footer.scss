@@ -1,0 +1,67 @@
+.footer-background {
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+}
+
+.footer {
+    display: flex;
+
+    padding-top: 56px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+
+    background-image: url('../images/footer-puppy.png'),
+        radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background-repeat: no-repeat;
+    background-size: 300px 310px, 100%;
+    background-position: bottom 0 right 40px, center;
+}
+
+.footer-title {
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.footer-contacts {
+    margin-right: 160px;
+}
+
+.footer-contacts-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.footer-locations-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.footer-contacts-icon {
+    width: 40px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.footer-locations-icon {
+    width: 22px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link:hover p {
+    color: var(--primary-hover-color);
+}
+
+.footer-link p {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-color);
+
+    transition: color 250ms linear;
+}

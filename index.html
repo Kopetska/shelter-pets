@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/icon-sleeping-area.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Shelter</title>
 </head>
 <body>
-    <div class="container">
-<header class="header">
+    <div class="header-start-wrapper">
+<header class="container header">
     <div class="logo">
-        <a href="">
+        <a href="./index.html">
 <h1 class="logo-title">Cozy House</h1>
 <p class="logo-subtitle">Shelter for pets in Boston</p>
 </a>
@@ -34,20 +34,44 @@
             </li>
         </ul>
     </nav>
+    <button class="button-burger" type="button">
+        <svg width="30px" height="22px">
+            <use class="icon-burger-horisontal icon-burger-main" href="./images/sprite.svg#icon-burger-horisontal"></use>
+            <use class="icon-burger-vertical icon-burger-main" href="./images/sprite.svg#icon-burger-vertical"></use>
+        </svg>
+    </button>
 </header>
-<main>
-    <section class="start-screen">
+    <section class="container start-screen">
 <div class="start-screen-content">
-    <h2>Not only people need a house</h2>
+    <h2>Not only people<br> need a house</h2>
     <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more
     than anybody else in the world, you will see!</p>
-    <button type="button">Make a friend</button>
+    <button class="button-make" type="button">Make a friend</button>
 </div>
-    </section>
-    <section class="about">
-        <img src="./images/about-pets.png" alt="Big white dog with grey cat" width="300" height="408">
-        <div>
-            <h2 class="section-title about-title">About the shelter “Cozy House”</h2>
+<div class="start-screen-img-block">
+<picture>
+        <source media="(min-width: 1280px)"
+            srcset="./images/start-screen-puppy-desktop1x.png 1x, ./images/start-screen-puppy-desktop2x.png 2x" type="image/png">
+        <source media="(min-width: 768px)"
+            srcset="./images/start-screen-puppy-tablet1x.png 1x, ./images/start-screen-puppy-tablet2x.png 2x"
+            type="image/png">
+        <img src="./images/start-screen-puppy-mobile1x.png" alt="Start screen puppy" loading="lazy">
+    </picture>
+    </div>
+</div>
+</section>
+    <section class="container about">
+        <picture>
+            <source media="(min-width: 1280px)" 
+            srcset="./images/about-pets-tab-desk1x.png 1x, ./images/about-pets-tab-desk2x.png 2x"
+                type="image/png">
+            <source media="(min-width: 768px)"
+                srcset="./images/about-pets-tab-desk1x.png 1x, ./images/about-pets-tab-desk2x.png 2x"
+                type="image/png">
+            <img src="./images/about-pets-mobile2x.png" alt="Big white dog with grey cat" loading="lazy">
+        </picture>
+        <div class="about-content">
+            <h2 class="about-title">About the shelter<br> “Cozy House”</h2>
             <p class="about-first-paragraph">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The
             others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
             <p class="about-second-paragraph">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including
@@ -56,14 +80,17 @@
             ever leave them alone.</p>
         </div>
     </section>
-    <section class="pets">
-<h2 class="section-title pets-title">Our friends who<br> are looking for a house</h2>
+    </div>
+    <main>
+        <div class="pets-background">
+    <section class="container pets">
+<h2 class="pets-title">Our friends who<br> are looking for a house</h2>
 <div class="pets-slider">
-<button class="pets-slider-button" type="button">
-    <svg class="pets-slider-icon">
-        <use href="./images/sprite.svg#icon-arrow-left"></use>
-    </svg>
-</button>
+    <button class="pets-slider-button pets-slider-button-left" type="button">
+        <svg class="pets-slider-icon">
+            <use href="./images/sprite.svg#icon-arrow-left"></use>
+        </svg>
+    </button>
 <ul class="pets-list">
     <li class="pets-item">
         <a class="pets-link" href="">
@@ -87,7 +114,7 @@
         <button class="button-learn" type="button">Learn more</button>
     </li>
 </ul>
-<button class="pets-slider-button" type="button">
+<button class="pets-slider-button pets-slider-button-right" type="button">
     <svg class="pets-slider-icon">
         <use href="./images/sprite.svg#icon-arrow-right"></use>
     </svg>
@@ -95,60 +122,59 @@
 </div>
 <button class="button-get-to-know" type="button">Get to know the rest</button>
     </section>
-    <section class="help" id="help">
-<h2 class="section-title help-title">How you can help<br> our shelter</h2>
-<ul class="help-list-1">
-    <li class="help-item-1">
+    </div>
+    <section class="container help" id="help">
+<h2 class="help-title">How you can help<br> our shelter</h2>
+<ul class="help-list">
+    <li class="help-item">
         <svg class="help-icon">
             <use href="./images/sprite.svg#icon-food"></use>
         </svg>
         <p class="help-subtitle">Pet food</p>
     </li>
-    <li class="help-item-1">
+    <li class="help-item">
         <svg class="help-icon">
             <use href="./images/sprite.svg#icon-transportation"></use>
         </svg>
         <p class="help-subtitle">Transportation</p>
     </li>
-        <li class="help-item-1">
+        <li class="help-item">
             <svg class="help-icon">
                 <use href="./images/sprite.svg#icon-toys"></use>
             </svg>
             <p class="help-subtitle">Toys</p>
         </li>
-        <li class="help-item-1">
+        <li class="help-item">
             <svg class="help-icon">
                 <use href="./images/sprite.svg#icon-cup"></use>
             </svg>
             <p class="help-subtitle">Bowls and cups</p>
         </li>
-        <li class="help-item-1">
+        <li class="help-item">
             <svg class="help-icon">
                 <use href="./images/sprite.svg#icon-shampoos"></use>
             </svg>
             <p class="help-subtitle">Shampoos</p>
         </li>
-        </ul>
-        <ul class="help-list-2">
-            <li class="help-item-2">
+            <li class="help-item">
                 <svg class="help-icon">
                     <use href="./images/sprite.svg#icon-vitamins"></use>
                 </svg>
                 <p class="help-subtitle">Vitamins</p>
             </li>
-            <li class="help-item-2">
+            <li class="help-item">
                 <svg class="help-icon">
                     <use href="./images/sprite.svg#icon-medicines"></use>
                 </svg>
                 <p class="help-subtitle">Medicines</p>
             </li>
-            <li class="help-item-2">
+            <li class="help-item">
                 <svg class="help-icon">
                     <use href="./images/sprite.svg#icon-collars"></use>
                 </svg>
                 <p class="help-subtitle">Collars / leashes</p>
             </li>
-            <li class="help-item-2">
+            <li class="help-item">
                 <svg class="help-icon">
                     <use href="./images/sprite.svg#icon-house"></use>
                 </svg>
@@ -156,10 +182,17 @@
             </li>
 </ul>
     </section>
-    <section class="donation">
-        <img src="./images/donation-dog.png" alt="Golden puppy" width="505" height="261">
+    <div class="donation-background">
+    <section class="container donation">
+        <picture>
+            <source media="(min-width: 1280px)"
+                srcset="./images/donation-dog-tab-desk1x.png 1x, ./images/donation-dog-tab-desk2x.png 2x" type="image/png">
+            <source media="(min-width: 768px)"
+                srcset="./images/donation-dog-tab-desk1x.png 1x, ./images/donation-dog-tab-desk2x.png 2x" type="image/png">
+            <img src="./images/donation-dog-mobile2x.png" alt="Golden puppy" loading="lazy">
+        </picture>
         <div class="donation-content">
-            <h2 class="section-title donation-title">You can also<br> make a donation</h2>
+            <h2 class="donation-title">You can also<br> make a donation</h2>
             <p class="donation-subtitle">Name of the bank / Type of bank account</p>
             <a class="donation-link" href="">
                 <svg class="donation-icon">
@@ -172,8 +205,10 @@
             in faucibus.</p>
         </div>
     </section>
+    </div>
 </main>
-<footer class="footer" id="footer">
+<div class="footer-background">
+<footer class="container footer" id="footer">
 <section class="footer-contacts">
     <h2 class="section-title footer-title">For questions<br> and suggestions</h2>
     <ul>
@@ -217,7 +252,7 @@
     </ul>
 </section>
 </footer>
-    </div>
+</div>
 <script src="./index.js" type="module"></script>
 </body>
 </html>

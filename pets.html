@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Pets</title>
 </head>
 <body>
-    <div class="container">
-<header class="header-pets">
+<header class="container header header-pets">
     <div class="logo-pets">
-        <a href="">
+        <a href="./index.html">
             <h1 class="logo-pets-title">Cozy House</h1>
             <p class="logo-pets-subtitle">Shelter for pets in Boston</p>
         </a>
@@ -36,6 +35,12 @@
             </li>
         </ul>
     </nav>
+    <button class="button-burger" type="button">
+        <svg width="30px" height="22px">
+            <use class="icon-burger-horisontal icon-burger-pets" href="./images/sprite.svg#icon-burger-horisontal"></use>
+            <use class="icon-burger-vertical icon-burger-pets" href="./images/sprite.svg#icon-burger-vertical"></use>
+        </svg>
+    </button>
 </header>
 <main>
     <section class="pets-friends">
@@ -155,7 +160,6 @@
         </ul>
     </section>
 </footer>
-    </div>
     <script src="./index.js" type="module"></script>
     </body>
 </html>
