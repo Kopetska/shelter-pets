@@ -5,7 +5,7 @@ align-items: center;
 
     padding: 2.62rem 0.7rem;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         padding-top: 5rem;
         padding-right: 10.3rem;
         margin-bottom: 6.25rem;
@@ -26,7 +26,7 @@ align-items: center;
 .about-content {
     margin-bottom: 2.62rem;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         margin-bottom: 5rem;
     }
 
@@ -44,7 +44,7 @@ align-items: center;
 
     margin-bottom: 25px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
     @include font('Georgia', 400, 2.18rem, 130%, 0.06em);
     text-align: left;
     }
@@ -67,7 +67,7 @@ align-items: center;
 .about-first-paragraph {
     margin-bottom: 1.38rem;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
     margin-bottom: 1.56rem;
     }
 }

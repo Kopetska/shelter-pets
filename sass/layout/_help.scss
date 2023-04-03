@@ -1,7 +1,7 @@
 .help {
     padding: 2.62rem 0.93rem;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         padding-top: 5rem;
         padding-right: 4.31rem;
         padding-bottom: 6.25rem;
@@ -24,7 +24,7 @@
 
         margin-bottom: 2.62rem;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 767px) {
                 @include font('Georgia', 400, 2.18rem, 130%, 0.06em);
                 margin-bottom: 3.75rem;
             }
@@ -39,7 +39,7 @@
    
    
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         justify-content: center;
        
         column-gap: 60px;
@@ -60,9 +60,9 @@
     justify-content: center;
     align-items: center;
 
-width: 130px;
+width: 125px;
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 767px) and (max-width: 1279px) {
     width: 170px;
 }
 
@@ -75,7 +75,7 @@ width: 130px;
     height: 50px;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
     width: 60px;
         height: 60px;
         margin-bottom: 30px;
@@ -89,7 +89,7 @@ width: 130px;
 
     color: $title-color;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
     @include font('Georgia', 400, 1.25rem, 115%, 0.06em);
     }
 

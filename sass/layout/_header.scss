@@ -8,7 +8,7 @@
  
   margin-bottom: 3.75rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     padding-right: 1.87rem;
         padding-left: 1.87rem;
   }
@@ -22,5 +22,7 @@
 
 .header-pets {
   padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
 }
 

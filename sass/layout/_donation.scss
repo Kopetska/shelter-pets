@@ -9,7 +9,7 @@ align-items: center;
 
 padding: 2.62rem 0.62rem;
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     padding: 5rem 0;
 }
 
@@ -24,7 +24,7 @@ padding: 2.62rem 0.62rem;
 .donation-content {
    margin-bottom: 2.62rem;
 
-   @media screen and (min-width: 768px) and (max-width: 1279px) {
+   @media screen and (min-width: 767px) and (max-width: 1279px) {
     padding-right: 194px;
     padding-left: 194px;
     margin-bottom: 3.75rem;
@@ -43,21 +43,21 @@ padding: 2.62rem 0.62rem;
     
         margin-bottom: 1.25rem;
     
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 767px) {
             @include font('Georgia', 400, 2.18rem, 130%, 0.06em);
             text-align: left;
         }
 }
 
 .donation-subtitle {
-    @include font('Georgia', 400, 0.93rem, 160%, 0.06em);
+    @include font('Georgia', 400, 14px, 160%, 0.06em);
 text-align: center;
 
     margin-bottom: 1.25rem;
 
     color: $title-color;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         @include font('Georgia', 400, 0.93rem, 110%, 0.06em);
         text-align: left;
     }
@@ -83,7 +83,7 @@ text-align: center;
             background-color: $primary-hover-color;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 767px) {
             width: 349px;
             margin-left: 0;
         }
@@ -105,7 +105,7 @@ text-align: center;
 
     color: $title-color;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         font-size: 20px;
         line-height: 115%;
     }

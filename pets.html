@@ -43,8 +43,9 @@
     </button>
 </header>
 <main>
-    <section class="pets-friends">
-<h2 class="section-title friends-title">Our friends who<br> are looking for a house</h2>
+    <div class="pets-friends-background">
+    <section class="container pets-friends">
+<h2 class="friends-title">Our friends who<br> are looking for a house</h2>
 <ul class="pets-list-2">
     <li class="pets-item-2">
         <a class="pets-link-2" href="">
@@ -111,55 +112,67 @@
     <button class="button-nav-2" type="button">&gt;&gt;</button>
 </div>
     </section>
+    </div>
 </main>
-<footer class="footer" id="footer">
-    <section class="footer-contacts">
-        <h2 class="section-title footer-title">For questions<br> and suggestions</h2>
-        <ul>
-            <li class="footer-contacts-item">
-                <a class="footer-link" href="mailto:email@shelter.com">
-                    <svg class="footer-contacts-icon">
-                        <use href="./images/sprite.svg#icon-email"></use>
-                    </svg>
-                    <p>email@shelter.com</p>
-                </a>
-            </li>
-            <li class="footer-contacts-item">
-                <a class="footer-link" href="tel:+136745677554">
-                    <svg class="footer-contacts-icon">
-                        <use href="./images/sprite.svg#icon-phone"></use>
-                    </svg>
-                    <p>+13 674 567 75 54</p>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <section class="footer-locations">
-        <h2 class="section-title footer-title">We are waiting<br> for your visit</h2>
-        <ul>
-            <li class="footer-locations-item">
-                <a class="footer-link"
-                    href="https://www.google.com/maps/place/1+Centre+St,+Boston,+MA+02119,+США/@42.3300628,-71.0920028,17z/data=!3m1!4b1!4m6!3m5!1s0x89e37a260516d22d:0x67663c18c6a54ce9!8m2!3d42.3300628!4d-71.0920028!16s%2Fg%2F11td12jd0m"
-                    target="_blank">
-                    <svg class="footer-locations-icon">
-                        <use href="./images/sprite.svg#icon-location"></use>
-                    </svg>
-                    <p>1 Central Street, Boston<br> (entrance from the store)</p>
-                </a>
-            </li>
-            <li class="footer-locations-item">
-                <a class="footer-link"
-                    href="https://www.google.com/maps/place/1+Centre+St,+Boston,+MA+02119,+США/@42.3300628,-71.0920028,17z/data=!3m1!4b1!4m6!3m5!1s0x89e37a260516d22d:0x67663c18c6a54ce9!8m2!3d42.3300628!4d-71.0920028!16s%2Fg%2F11td12jd0m"
-                    target="_blank">
-                    <svg class="footer-locations-icon">
-                        <use href="./images/sprite.svg#icon-location"></use>
-                    </svg>
-                    <p>18 South Park, London</p>
-                </a>
-            </li>
-        </ul>
-    </section>
-</footer>
+<div class="footer-background">
+    <footer class="container footer" id="footer">
+        <section class="footer-contacts">
+            <h2 class="footer-title">For questions<br> and suggestions</h2>
+            <ul>
+                <li class="footer-contacts-item">
+                    <a class="footer-link" href="mailto:email@shelter.com">
+                        <svg class="footer-contacts-icon">
+                            <use href="./images/sprite.svg#icon-email"></use>
+                        </svg>
+                        <p>email@shelter.com</p>
+                    </a>
+                </li>
+                <li class="footer-contacts-item">
+                    <a class="footer-link" href="tel:+136745677554">
+                        <svg class="footer-contacts-icon">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <p>+13 674 567 75 54</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer-locations">
+            <h2 class="footer-title">We are waiting<br> for your visit</h2>
+            <ul>
+                <li class="footer-locations-item">
+                    <a class="footer-link"
+                        href="https://www.google.com/maps/place/1+Centre+St,+Boston,+MA+02119,+США/@42.3300628,-71.0920028,17z/data=!3m1!4b1!4m6!3m5!1s0x89e37a260516d22d:0x67663c18c6a54ce9!8m2!3d42.3300628!4d-71.0920028!16s%2Fg%2F11td12jd0m"
+                        target="_blank">
+                        <svg class="footer-locations-icon">
+                            <use href="./images/sprite.svg#icon-location"></use>
+                        </svg>
+                        <p>1 Central Street, Boston<br> (entrance from the store)</p>
+                    </a>
+                </li>
+                <li class="footer-locations-item">
+                    <a class="footer-link"
+                        href="https://www.google.com/maps/place/1+Centre+St,+Boston,+MA+02119,+США/@42.3300628,-71.0920028,17z/data=!3m1!4b1!4m6!3m5!1s0x89e37a260516d22d:0x67663c18c6a54ce9!8m2!3d42.3300628!4d-71.0920028!16s%2Fg%2F11td12jd0m"
+                        target="_blank">
+                        <svg class="footer-locations-icon">
+                            <use href="./images/sprite.svg#icon-location"></use>
+                        </svg>
+                        <p>18 South Park, London</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <picture class="footer-image">
+            <source media="(min-width: 1280px)"
+                srcset="./images/footer-puppy-tab-desk1x.png 1x, ./images/footer-puppy-tab-desk2x.png 2x"
+                type="image/png">
+            <source media="(min-width: 767px)"
+                srcset="./images/footer-puppy-tab-desk1x.png 1x, ./images/footer-puppy-tab-desk2x.png 2x"
+                type="image/png">
+            <img src="./images/footer-puppy-mobile2x.png" alt="Footer puppy" loading="lazy">
+        </picture>
+    </footer>
+</div>
     <script src="./index.js" type="module"></script>
     </body>
 </html>
