@@ -1,4 +1,6 @@
 .button-burger {
+    position: relative;
+    z-index: 2;
     background-color: transparent;
 
     @media screen and (min-width: 767px) {
@@ -27,3 +29,52 @@ transition: stroke 250ms linear;
         stroke: $primary-color;
     }
 }
+
+
+
+.button-burger.is-open .icon-burger-vertical {
+    display: block;
+}
+
+.button-burger.is-open .icon-burger-horisontal {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 766px) {
+
+.navigation {
+display: none;
+
+    position: absolute;
+   top: 0;
+    right: 0;
+    z-index: 1;
+
+    width: 320px;
+   height: 100vh;
+
+    background-color: #292929;
+
+    &.is-open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+align-items: center;
+       gap: 40px;
+
+       & a {
+        font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 160%;
+       }
+
+    }
+}
+}
+
+
+
