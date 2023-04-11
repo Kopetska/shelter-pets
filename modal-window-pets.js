@@ -97,13 +97,12 @@ const petsArray = [
   },
 ];
 
-const petsLinks = document.querySelectorAll(".pets-link");
 const backdropRef = document.querySelector(".backdrop");
-const petsList = document.querySelector(".pets-list");
+const petsList2 = document.querySelector(".pets-list-2");
 const modal = document.querySelector(".modal");
 const buttonModalClose = document.querySelector(".button-icon-vector");
 
-petsList.addEventListener("click", (event) => {
+petsList2.addEventListener("click", (event) => {
   event.preventDefault();
 
   const object = petsArray.filter(

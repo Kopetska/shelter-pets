@@ -68,5 +68,8 @@
 <symbol id="icon-burger-vertical" viewBox="0 0 32 32">
 <path fill="none" style="stroke: var(--color1, #f1cdb3)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.1333" d="M25.6 32v-32M14.933 32v-32M4.267 32v-32"></path>
 </symbol>
+<symbol id="icon-vector" viewBox="0 0 32 32">
+<path d="M19.803 16l11.409-11.409c1.050-1.050 1.050-2.753 0-3.803s-2.753-1.050-3.803 0l-11.409 11.409-11.409-11.409c-1.050-1.050-2.753-1.050-3.803 0s-1.050 2.753 0 3.803l11.409 11.409-11.409 11.409c-1.050 1.050-1.050 2.753 0 3.803s2.753 1.050 3.803 0l11.409-11.409 11.409 11.409c1.050 1.050 2.753 1.050 3.803 0s1.050-2.753 0-3.803l-11.409-11.409z"></path>
+</symbol>
 </defs>
 </svg>
