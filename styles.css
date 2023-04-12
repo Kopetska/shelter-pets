@@ -197,6 +197,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    animation: animateX1 400ms ease-in-out alternate;
   }
   .navigation.is-open a {
     font-family: "Arial";
@@ -204,6 +205,14 @@ button {
     font-weight: 400;
     font-size: 32px;
     line-height: 160%;
+  }
+}
+@keyframes animateX1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 .button-make {
